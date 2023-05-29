@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Supplier</title>
+  </head>
+  <body>
+    <h1>Create Supplier</h1>
+
+    <form action="/suppliers" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contactPerson">Contact Person:</label>
+      <input type="text" id="contactPerson" name="contactPerson" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <button type="submit">Create</button>
+    </form>
+  </body>
+</html>

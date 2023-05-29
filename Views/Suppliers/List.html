@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supplier List</title>
+  </head>
+  <body>
+    <h1>Supplier List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Contact Person</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop over the suppliers and display them in the table -->
+        <% suppliers.forEach((supplier) => { %>
+          <tr>
+            <td><%= supplier.name %></td>
+            <td><%= supplier.contactPerson %></td>
+            <td><%= supplier.address %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>
